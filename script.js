@@ -2,6 +2,8 @@ function indexOfIgnoreCase(s1, s2) {
   return s1.toLowerCase().indexOf(s2.toLowerCase());
 }
 
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
+function findIndex() {
+  const s1 = document.getElementById("s1").value;
+  const s2 = document.getElementById("s2").value;
+  document.getElementById("result").textContent = indexOfIgnoreCase(s1, s2);
+}
